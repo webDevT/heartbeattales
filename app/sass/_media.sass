@@ -91,6 +91,11 @@
 			flex-direction: column-reverse
 	.main-screen--last
 		padding-top: 0
+	.steps-section
+		padding-bottom: 50px
+	.main-screen__title
+		margin-top: 20px 
+		margin-bottom: 30px
 
 
 
@@ -100,6 +105,32 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	/**/
+	.items-section__text
+		font-size: 24px
+	.items-section
+		padding-top: 30px 
+		padding-bottom: 30px
+	.item 
+		margin-bottom: 20px
+	//start fixed footer style 
+	.fixed-footer
+		position: fixed
+		bottom: 0
+		left: 0
+		width: 100%
+		padding-top: 0px
+		padding-bottom: 18px
+		display: flex
+		flex-direction: column
+		align-items: center
+		z-index: 999
+		transform: translateY(100%)
+		transition: all 0.3s
+		.button 
+			width: 90vw
+	.fixed-footer.sticky
+		transform: translateY(0)
+//end fixed footer style
 
 
 /* Extra Small Devices, Phones */

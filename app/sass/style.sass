@@ -50,6 +50,7 @@ body
     li:last-child 
         a:hover
             background: $purple
+            text-decoration: none
     a
     
         text-decoration: none
@@ -60,7 +61,7 @@ body
         color: $purple
         text-decoration: underline
 .main-screen
-    padding-top: 200px
+    padding-top: 160px
     padding-bottom: 100px
 .main-screen__img
     object-fit: cover 
@@ -78,8 +79,11 @@ h2
     font-weight: 800 
     color: $purple
     line-height: 1.2
-    margin-top: 10px 
-    margin-bottom: 20px
+    margin-top: 40px 
+    margin-bottom: 40px
+.main-screen
+    .row 
+        align-items: center
 .main-screen__title--s,
 h2
     font-size: 30px
@@ -136,21 +140,30 @@ h2
     margin-bottom: 5px
 .items-section
     background: $purple
-    padding-top: 30px 
-    padding-bottom: 30px 
+    padding-top: 45px 
+    padding-bottom: 45px 
     color: #fff
 .item 
     display: flex 
-    flex-direction: column 
+    justify-content: flex-start
     align-items: center
     text-align: center
     font-size: 16px
+    margin-bottom: 20px
     img 
         max-width: 30px
         max-height: 30px
-        
+.item-list
+    width: 330px    
+    margin-left: auto 
+    margin-right: auto
+    padding-top: 40px
+    padding-bottom: 10px  
 .item-img
-    min-height: 40px
+    min-width: 60px
+    display: flex
+    align-items: center 
+    justify-content: center
 .row-section
     padding-top: 150px 
     padding-bottom: 100px
@@ -237,6 +250,13 @@ h2
             font-weight: 700
 .margin-30
     margin-top: 60px
+.items-section__text
+    text-align: center 
+    font-size: 26px 
+    font-style: italic
+    font-weight: 500
+.fixed-footer
+    display: none
 @import "media"
 
 
